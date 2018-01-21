@@ -23,17 +23,3 @@ if __name__ == "__main__":
     training = 'Dataset.data'
     delim = ' '
     data_stats = generate_stats(training, delim)
-
-
-# Function to read the input file as a csv
-# def read_input(filename, separator):
-#     data_frame = {}
-#     index = 0
-#     with open(filename, 'r') as file_obj:
-#         for line in csv.reader(file_obj, delimiter=separator, skipinitialspace=True, quoting=csv.QUOTE_NONE):
-#             if line:
-#                 data_line = {'class': line[0], 'age': line[1], 'gender': line[2], 'survived': line[3]}
-#                 data_frame[index] = data_line
-#                 index = index + 1
-#     return data_frame
-
