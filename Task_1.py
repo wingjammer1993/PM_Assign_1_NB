@@ -25,11 +25,25 @@ def generate_conditional(joint_probabilities):
     return data_conditional_probabilities
 
 
+def classify(table):
+    data_classify = {}
+    for i in table:
+        if table[i] == 'data not available':
+            data_classify[i] = 'data not available'
+        elif table[i] >= 0.5:
+            data_classify[i] = 'D'
+        else:
+            data_classify[i] = 'S'
+    return data_classify
+
+
 if __name__ == "__main__":
     training = 'Dataset.data'
     delim = ' '
 
     data_joint = Task_0.generate_stats(training, delim)
     data_conditional = generate_conditional(data_joint)
+    classification = classify(data_conditional)
     print(data_conditional)
+    print(classification)
 
