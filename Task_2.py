@@ -2,6 +2,7 @@ import csv
 import itertools
 import Task_1
 
+
 # Function to create counts of all the keys
 def generate_tables(filename, separator):
     data_yes = {}
