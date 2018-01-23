@@ -23,3 +23,4 @@ if __name__ == "__main__":
     training = 'Dataset.data'
     delim = ' '
     data_stats = generate_stats(training, delim)
+    print(data_stats)
